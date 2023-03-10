@@ -1,0 +1,65 @@
+.Create-education {
+	grid-area: Create-education;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.Add--education {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+.Add--education .section {
+	display: flex;
+}
+
+.Education--input {
+	width: 100%;
+}
+
+.Education--input input {
+	width: 70%;
+}
+
+.last-input {
+	display: flex;
+	gap: 30px;
+}
+
+.Create-education .edu-btn {
+	width: fit-content;
+	margin: 0;
+	padding: 5px 50px;
+}
+
+.create-education--body {
+	border-bottom: 2px solid var(--text-color);
+}
+
+
+@media only screen and (max-width: 935px) {
+	.last-input>div input{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.Create-education input {
+		width: 100%;
+	}
+
+	.Add--education .section {
+		flex-direction: column;
+		gap: 35px;
+	}
+
+	.last-input>div input{
+		width: 100%;
+	}
+
+	.last-input>div{
+		flex: 1;
+	}
+}

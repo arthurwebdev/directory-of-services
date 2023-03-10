@@ -1,0 +1,23 @@
+
+.save--image {
+	grid-area: save--image;
+}
+
+.save--image{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid var(--text-color);
+}
+
+.save--image input{
+	outline: none;
+	padding: 0;
+	border-radius: 0;
+}
+
+.save--avatar-body{
+	display: flex;
+	margin-bottom: 10px;
+	gap: 20px;
+	padding: 0 10px;
+}

@@ -1,0 +1,10 @@
+.logo p{
+	font-weight: 900;
+	font-size: 2.5em;
+	color: var(--text-color);
+	transition-duration: .3s;
+}
+
+.logo p:hover{
+	text-shadow: 0 0 0px var(--text-color), 0 0 8px var(--text-color);
+}

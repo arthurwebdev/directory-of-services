@@ -1,0 +1,71 @@
+
+.container .left .people .person {
+	position: relative;
+	width: 100%;
+	padding: 12px 10% 16px;
+	cursor: pointer;
+	background-color: var(--white);
+}
+
+.container .left .people .person:after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
+	width: 80%;
+	height: 1px;
+	content: "";
+	background-color: var(--light);
+	transform: translate(-50%, 0);
+}
+
+.container .left .people .person img {
+	float: left;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-right: 12px;
+	border-radius: 50%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.container .left .people .person .name {
+	font-size: 1rem;
+	line-height: 22px;
+	color: var(--dark);
+	font-weight: 600;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.container .left .people .person .preview {
+	font-size: 14px;
+	display: inline-block;
+	overflow: hidden !important;
+	width: 70%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--grey);
+}
+
+.container .left .people .person:hover {
+	padding-top: 13px;
+	border: 0;
+	background-color: var(--blue);
+	width: calc(100% + 2px);
+	padding-left: calc(10% + 1px);
+}
+
+.container .left .people .person:hover span {
+	color: var(--white);
+}
+
+.container .left .people .person:hover:after {
+	display: none;
+}
+
+@media only screen and (max-width: 320px) {
+	
+}

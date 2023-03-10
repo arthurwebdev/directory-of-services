@@ -1,0 +1,79 @@
+.skills {
+	grid-area: skills;
+	border-bottom: 2px solid var(--text-color);
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.add-skills{
+	display: flex;
+	align-items: center;
+}
+
+.skills--section{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 20px;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+
+.Skills--input{
+	width: 30%;
+}
+
+.Skills--input input{
+	width: 100%;
+}
+
+.Skillbtn{
+	margin-left: 20px;
+	padding: 5px 40px;
+	font-size: 1.125rem;
+	border-radius: 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	background-color: var(--text-color);
+	color: white;
+	font-weight: normal;
+	transition: all .3s ease-in-out;
+}
+
+.Skillbtn:hover{
+	color: var(--text-color);
+	background-color: transparent;
+	border: 1px solid var(--text-color);
+}
+
+.skills--section div{
+	border: 2px solid var(--text-color);
+	border-radius: 10px;
+	padding: 3px 10px 6px 10px;
+}
+
+.skills--section span{
+	margin-left: 10px;
+	cursor: pointer;
+	color: var(--text-color);
+}
+
+
+@media only screen and (max-width: 425px){
+	.add-skills{
+		flex-direction: column;
+		gap: 15px;
+	}
+	
+	.Skills--input,.Skillbtn{
+		width: 100%;
+	}
+
+	.Skillbtn{
+		margin: 0;
+		text-align: center;
+	}
+}

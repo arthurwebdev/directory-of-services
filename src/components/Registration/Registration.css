@@ -1,0 +1,189 @@
+.registartion {
+	position: relative;
+}
+
+.acc-form__links {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.acc-form__links button {
+	border: none;
+	background-color: white;
+	padding: 5px 10px;
+	border-radius: 15px;
+	font-size: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
+}
+
+.acc-form {
+	position: absolute;
+	left: 0;
+	background-image: url('../../images/backgroundreglog.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	animation: pan 20s infinite alternate linear;
+}
+
+@keyframes pan {
+	to {
+		background-position: 15% 50%;
+	}
+}
+
+.acc-body {
+	margin: 70px;
+	background-color: white;
+	width: 340px;
+	height: fit-content;
+	padding: 20px 45px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 45px;
+	border-radius: 15px;
+}
+
+.acc-h1 {
+	font-size: 2em;
+	font-weight: 900;
+	margin: 25px auto;
+}
+
+.registartion__body input,
+.login input {
+	width: 100%;
+	padding: 5px 12px;
+	border-radius: 10px;
+	outline: 2px solid var(--text-color);
+	border: none;
+}
+
+.registartion__body input:focus {
+	outline: 1px solid var(--text-color);
+	box-shadow: 0 0 0px var(--text-color), 0 0 8px var(--text-color);
+}
+
+.acc-btn {
+	width: 60%;
+	margin: 0 auto;
+	padding: 5px 15px;
+	font-size: 1.1em;
+	border-radius: 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	background-color: var(--text-color);
+	color: white;
+	font-weight: normal;
+	transition: all .3s ease-in-out;
+}
+
+.acc-btn:hover {
+	color: var(--text-color);
+	background-color: transparent;
+	border: 1px solid var(--text-color);
+}
+
+.registartion__body .input {
+	position: relative;
+}
+
+.registartion__body p {
+	position: absolute;
+	top: 33px;
+	right: 0;
+	font-size: 0.75em;
+	color: red;
+}
+
+.floating-label-group,
+textarea {
+	position: relative;
+
+}
+
+.floating-label {
+	font-size: 0.8125em;
+	color: #cccccc;
+	position: absolute;
+	pointer-events: none;
+	top: 6px;
+	left: 12px;
+	transition: all 0.1s ease;
+}
+
+.floating-label-group input:focus~.floating-label,
+.floating-label-group input:not(:focus):valid~.floating-label {
+	top: -25px;
+	bottom: 0px;
+	left: 0px;
+	font-size: 1.125em;
+	opacity: 1;
+	color: black;
+}
+
+@media only screen and (min-width: 1900px) {
+	.acc-body {
+		width: 600px;
+		row-gap: 60px;
+		padding: 40px 70px;
+	}
+
+	.registartion__body input,
+	.login input {
+		padding: 10px 12px;
+		border-radius: 25px;
+	}
+
+	.acc-btn {
+		border-radius: 25px;
+	}
+
+	.floating-label {
+		top: 9px;
+		left: 17px;
+	}
+
+	.floating-label-group input:focus~.floating-label,
+	.floating-label-group input:not(:focus):valid~.floating-label {
+		top: -40px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.acc-h1 {
+		margin: 0 auto;
+	}
+
+	.acc-body {
+		min-width: 230px;
+		row-gap: 40px;
+		padding: 30px 30px;
+	}
+
+	.floating-label {
+		top: 6px;
+	}
+
+	.floating-label-group input:focus~.floating-label,
+	.floating-label-group input:not(:focus):valid~.floating-label {
+		top: -20px;
+	}
+	
+	.acc-btn{
+		width: 100%;
+		padding: 5px 10px;
+	}
+}

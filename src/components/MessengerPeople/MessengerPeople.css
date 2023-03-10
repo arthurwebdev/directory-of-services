@@ -1,0 +1,20 @@
+
+.container .left .people::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+
+.container .left .people::-webkit-scrollbar-thumb {
+	border-radius: 50px;
+	background-color: var(--text-color);
+}
+
+.container .left .people {
+	margin-left: -1px;
+	border-right: 1px solid var(--light);
+	border-left: 1px solid var(--light);
+	width: calc(100% + 2px);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	flex: 1;
+}

@@ -1,0 +1,37 @@
+.comment{
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.comment img{
+	width: 4.375rem;
+	height: 4.375rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.comment:hover {
+	background: rgba(0, 0, 0, 0.02);
+	cursor: pointer;
+}
+
+.comment {
+	border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+	padding: 15px;
+}
+
+.comment__stars-and-date{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.comment__header{
+	display: flex;
+	flex-direction: column;
+	gap: .3rem;
+}
+
+

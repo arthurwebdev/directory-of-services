@@ -1,0 +1,7 @@
+.Header{
+	padding: 5px 0px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--text-color);
+	margin-bottom: 25px;
+}

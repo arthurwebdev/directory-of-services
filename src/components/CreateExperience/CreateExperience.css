@@ -1,0 +1,54 @@
+.experience {
+	grid-area: experience;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-bottom: 2px solid var(--text-color);
+}
+
+.Experience--input{
+	width: 100%;
+}
+
+.add-experience input,.Skills--input input{
+	width: 70%;
+}
+
+.add-experience .section{
+	display: flex;
+}
+
+.experience--sections{
+	padding: 0 10px;
+}
+
+.experience .add-experience{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 35px;
+}
+
+.add-experience .checkbox{
+	width: auto;
+	margin-top: 10px;
+	outline: none;
+}
+
+.add-experience button{
+	width: fit-content;
+	margin: 0 0 ;
+	padding: 5px 50px;
+}
+
+
+@media only screen and (max-width: 425px){
+	.add-experience .section{
+		flex-direction: column;
+		gap: 35px;
+	}
+	.add-experience input,
+	.add-experience button{
+		width: 100%;
+	}
+}

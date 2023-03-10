@@ -1,0 +1,434 @@
+.Profile {
+	border-radius: 20px;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+.profileIsAvailable{
+	display: grid;
+	place-items: center;
+	height: 100%;
+}
+
+.profile__create-profil{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.profile__create-profil h1{
+	color: var(--text-color);
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.profile__create-profil--btn{
+	width: fit-content !important;
+	padding: .4rem 4rem !important;
+}
+
+
+.Profile--header {
+	background-color: #24bce5;
+	display: flex;
+	justify-content: space-around;
+	gap: 1.5rem;
+	position: relative;
+	padding: 3rem 1.875rem;
+	margin-bottom: 60px;
+	border-radius: 25px;
+}
+
+.Profile--header .message--buton {
+	top: 80%;
+	left: calc(100% - 15%);
+}
+
+.Profile--header .acc-form__links .back {
+	color: var(--text-color);
+}
+
+.message--buton a button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: white;
+	color: var(--text-color);
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.profile__header-img {
+	position: relative;
+}
+
+.Profile--avatar {
+	width: 8.6875rem;
+	height: 8.6875rem;
+	border-radius: 50%;
+	border: 2px solid white;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.UserName {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	color: white;
+	width: 55%;
+}
+
+.UserName h1 {
+	color: white;
+	letter-spacing: 6px;
+}
+
+.UserName h2 {
+	color: white;
+	letter-spacing: 3px;
+}
+
+.Left--section,
+.Right--section {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	border-bottom: 2px solid var(--text-color);
+}
+
+.Right--section {
+	grid-area: Right--section;
+}
+
+.Left--section {
+	padding-top: 65px;
+	border-right: 2px solid var(--text-color);
+	grid-area: Left--section;
+}
+
+.Bottom--section {
+	grid-area: Bottom--section;
+	padding: 20px 0;
+}
+
+.Main {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: auto auto;
+	color: var(--text-color);
+	grid-template-areas:
+		"Left--section Right--section"
+		"Bottom--section Bottom--section";
+}
+
+.Profile--data,
+.Profile--links ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+ul.Profile--data li,
+.Profile--links li {
+	display: flex;
+	align-items: center;
+	word-break: break-all;
+}
+
+ul li::before {
+	background-size: 20px 20px;
+	display: inline-block;
+	min-width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+/* ----------------------left--section---------------------- */
+
+ul.Profile--data li:nth-child(1)::before {
+	content: "";
+	background-image: url('../../images/telephone-receiver-material-svgrepo-com.png');
+}
+
+ul.Profile--data li:nth-child(2)::before {
+	content: "";
+	background-image: url('../../images/telephone-receiver-material-svgrepo-com.png');
+}
+
+ul.Profile--data li:nth-child(3)::before {
+	content: "";
+	background-image: url('../../images/gmail-svgrepo-com.png');
+}
+
+ul.Profile--data li:nth-child(4)::before {
+	content: "";
+	background-image: url('../../images/address-svgrepo-com.png');
+}
+
+ul.Profile--data li:nth-child(5)::before {
+	content: "";
+	background-image: url('../../images/birthday-cake-svgrepo-com.png');
+}
+
+.Profile--skills ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px 20px;
+}
+
+.Profile--skills li {
+	border: 2px solid var(--text-color);
+	border-radius: 15px;
+	padding: 5px 10px;
+}
+
+/* ----------------languages--section------------------- */
+
+.Profile--languages>div {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.Profile--languages section {
+	border-bottom: 2px solid var(--text-color);
+	padding-bottom: 10px;
+}
+
+.Profile--languages h6 {
+	font-size: 1.4em;
+	margin-bottom: 5px;
+}
+
+/* --------------------Profile--educations--------------------- */
+
+.Profile--education>div,
+.Profile--experience>div {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.Profile--education section,
+.Profile--experience section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-bottom: 2px solid var(--text-color);
+	padding-bottom: 10px;
+}
+
+.Profile--education section p:nth-child(1),
+.Profile--experience section p:nth-child(1) {
+	font-size: 1.45em;
+}
+
+.Profile--education section p {
+	font-size: 1.1em;
+}
+
+.Profile--education section span {
+	margin-left: 20px;
+}
+
+/* -----------------------Right--section----------------------------- */
+
+.Profile h4 {
+	font-size: 1.7em;
+	margin-bottom: 15px;
+}
+
+.Profile--links li:nth-child(1)::before {
+	content: "";
+	background-image: url('../../images/github-svgrepo-com.png');
+}
+
+.Profile--links li:nth-child(2)::before {
+	content: "";
+	background-image: url('../../images/linkedin-svgrepo-com.png');
+}
+
+.Profile--links li:nth-child(3)::before {
+	content: "";
+	background-image: url('../../images/instagram-logo-facebook-svgrepo-com.png');
+}
+
+.Profile--links li:nth-child(4)::before {
+	content: "";
+	background-image: url('../../images/facebook-svgrepo-com.png');
+}
+
+.Profile--links li:nth-child(5)::before {
+	content: "";
+	background-image: url('../../images/twitter-rounded-svgrepo-com.png');
+}
+
+.Profile--links li:nth-child(6)::before {
+	content: "";
+	background-image: url('../../images/link-svgrepo-com.png');
+}
+
+.Profile--bio p {
+	letter-spacing: .1rem;
+	word-break: break-all;
+}
+
+/* -------------------Bottom--section----------------------- */
+
+.Bottom--section__btn {
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.Bottom--section__btn button {
+	border: none;
+	background-color: transparent;
+	color: var(--text-color);
+	font-size: 1.5em;
+	position: relative;
+	cursor: pointer;
+}
+
+.Bottom--section__btn button:hover {
+	border: none;
+}
+
+.Bottom--section__btn button::after {
+	content: '';
+	position: absolute;
+	width: 0px;
+	height: 2px;
+	left: 50%;
+	bottom: -5%;
+	background-color: var(--text-color);
+	transition: all ease-in-out .2s;
+}
+
+.Bottom--section__btn button:hover::after {
+	width: 100%;
+	left: 0;
+}
+
+.Profile--gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	padding: 10px 0;
+	border-top: 2px solid var(--text-color);
+}
+
+.Progile--image-container {
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 15px;
+	max-height: 12.5em;
+	max-width: 12.5em;
+}
+
+.Profile--gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	border-radius: 15px;
+	transition: width .5s, height .5s, transform .5s;
+}
+
+.Profile--gallery-img:hover {
+	transform: scale3d(1.2, 1.2, 1.2);
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.Profile--header .message--buton {
+		left: calc(100% - 20%);
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.Profile--header {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		gap: 10px;
+	}
+
+	.UserName {
+		padding: 0;
+		text-align: center;
+		row-gap: 5px;
+		padding-bottom: 15px;
+	}
+
+	.UserName h1,
+	.UserName h2 {
+		letter-spacing: 2px;
+	}
+
+	.Profile--header .message--buton {
+		top: 88%;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+
+	.Main {
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"Left--section"
+			"Right--section"
+			"Bottom--section";
+	}
+
+	.Left--section,
+	.Right--section,
+	.Bottom--section {
+		padding: 0;
+		max-width: 100%;
+		border: none;
+	}
+
+	.Left--section,
+	.Right--section {
+		gap: 20px;
+	}
+
+	.Left--section h4,
+	.Right--section h4 {
+		text-align: center;
+	}
+
+	.Left--section {
+		padding-top: 15px;
+	}
+
+	.Profile--data {
+		align-items: center;
+	}
+
+	.Main {
+		gap: 20px;
+	}
+
+	.Profile--gallery {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 15px;
+	}
+
+	.Progile--image-container {
+		max-height: 12.5em;
+		max-width: 100%;
+	}
+}
+
+@media only screen and(max-width: 320px) {
+	.profile__create-profil h1{
+		font-size: 1rem !important;
+	}
+}

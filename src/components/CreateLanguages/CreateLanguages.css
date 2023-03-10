@@ -1,0 +1,56 @@
+.create-languages{
+	grid-area: create-languages;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-bottom: 2px solid var(--text-color);
+}
+
+.add-languages{
+	display: flex;
+	
+}
+
+.language--input{
+	width: 100%;
+	position: relative;
+}
+
+.language--input input{
+	width: 70%;
+}
+
+.languagebtn{
+	width: fit-content;
+	padding: 5px 50px;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 1px solid transparent;
+	background-color: var(--text-color);
+	color: white;
+	font-weight: normal;
+	transition: all .3s ease-in-out;
+}
+
+.languagebtn:hover{
+	color: var(--text-color);
+	background-color: transparent;
+	border: 1px solid var(--text-color);
+}
+
+@media only screen and (max-width: 425px){
+	.add-languages{
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.language--input input,
+	.languagebtn{
+		width: 100%;
+	}
+
+	.languagebtn{
+		margin: 0;
+		text-align: center;
+	}
+}

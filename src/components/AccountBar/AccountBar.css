@@ -1,0 +1,96 @@
+.account-bar{
+	display: flex;
+	align-items: center;
+	column-gap: 1rem;
+}
+
+.account-bar__menu{
+	display: flex;
+	align-items: center;
+	column-gap: .5rem;
+}
+
+.account-bar__menu .icon-menu{
+	border: none;
+	background: transparent;
+}
+
+.account-bar a, .acc--msg, .account-bar__menu .icon{
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	color: var(--text-color);
+	transition-duration: .3s;
+	cursor: pointer;
+}
+
+.account-bar a:hover, .acc--msg:hover, .account-bar__menu:hover{
+	color: black;
+}
+
+.acc--msg{
+	font-size: 2.1rem;
+}
+
+.account-bar__img{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	cursor: pointer;
+	object-fit: cover;
+}
+
+.account-bar button{
+	position: relative;
+	border-radius: 50%;
+	border: none;
+}
+
+.profile-setings{
+	position: absolute;
+	right: 0;
+	top: 140%;
+	border: 1px solid var(--text-color);
+	width: 400%;
+	background-color: white;
+	z-index: 100;
+	padding: 0 15px;
+	border-radius: 10px;
+}
+
+.profile-setings a {
+	display: flex;
+	justify-content: start;
+	gap: .7rem;
+	font-size: 1rem;
+	margin: .7rem 0;
+}
+
+.account-bar__menu .profile-setings{
+	top: 250%;
+}
+
+@media only screen and (min-width: 500px){
+	.account-bar__menu .icon-menu{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.account-bar__menu .icon-menu{
+		display: block;
+		cursor: pointer;
+	}
+
+	.account-bar__menu .profile-setings{
+		width: 1000%;
+	}
+
+	.account-bar__menu > a, .account-bar__menu span{
+		display: none;
+	}
+
+	.account-bar{
+		column-gap: .2rem;
+	}
+}

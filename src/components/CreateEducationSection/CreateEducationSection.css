@@ -1,0 +1,32 @@
+.create-education--section{
+	padding: 0 10px;
+	
+}
+
+.created-education{
+	border-bottom: 2px solid var(--text-color);
+	margin: 10px 0;
+   padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.created-education--body{
+	display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.created-education p{
+	font-size: 1.1em;
+}
+
+.created-education h5{
+	font-size: 1.7em;
+}
+
+.created-edubtn{
+	cursor: pointer;
+	padding: 0 20px;
+}

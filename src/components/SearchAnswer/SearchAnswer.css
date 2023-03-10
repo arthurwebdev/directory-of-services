@@ -1,0 +1,9 @@
+.Search--answer{
+	margin-top: 2em;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* --------------------card-------------------- */

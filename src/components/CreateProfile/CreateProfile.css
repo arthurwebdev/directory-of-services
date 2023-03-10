@@ -1,0 +1,222 @@
+.CreateProfile--body {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 70px 70px 70px 70px 70px 70px auto auto auto auto auto auto;
+	gap: 15px 20px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"profession address"
+		"category phone2"
+		"email birthday"
+		"linkedin github"
+		"instagram fecebook"
+		"twitter other"
+		"bio bio"
+		"Create-education Create-education"
+		"experience experience"
+		"skills skills"
+		"create-languages create-languages"
+		"save--image save--image"
+		"save--gallery save--gallery";
+}
+
+.linkedin {
+	grid-area: linkedin;
+}
+
+.twitter {
+	grid-area: twitter;
+}
+
+.other {
+	grid-area: other;
+}
+
+.fecebook {
+	grid-area: fecebook;
+}
+
+.instagram {
+	grid-area: instagram;
+}
+
+.birthday {
+	grid-area: birthday;
+}
+
+.github {
+	grid-area: github;
+}
+
+.profession {
+	grid-area: profession;
+}
+
+.save--gallery {
+	grid-area: save--gallery;
+	border-bottom: 2px solid var(--text-color);
+}
+
+.address {
+	grid-area: address;
+}
+
+.category {
+	grid-area: category;
+}
+
+.phone2 {
+	grid-area: phone2;
+}
+
+.email {
+	grid-area: email;
+}
+
+.portfolio {
+	grid-area: portfolio;
+}
+
+.bio {
+	grid-area: bio;
+	border-bottom: 2px solid var(--text-color);
+}
+
+
+.CreateProfile .input,
+.Experience--input,
+.Skills--input,
+.Education--input {
+	position: relative;
+}
+
+.CreateProfile h3 {
+	margin: 7px 0;
+	font-size: 1.5em;
+}
+
+.CreateProfile .input input,
+.CreateProfile select {
+	min-width: 100%;
+}
+
+.CreateProfile select{
+	max-height: 27px;
+}
+
+.CreateProfile input,
+textarea {
+	padding: 5px 12px;
+	border-radius: 10px;
+	outline: 2px solid var(--text-color);
+	border: none;
+}
+
+.CreateProfile input:focus,
+.CreateProfile textarea:focus {
+	box-shadow: 0 0 0px var(--text-color), 0 0 8px var(--text-color);
+}
+
+.CreateProfile .input p {
+	font-size: 0.75em;
+	color: red;
+}
+
+.CreateProfile--label {
+	position: absolute;
+	top: -27px;
+	font-size: 1.125em;
+}
+
+.CreateProfile textarea {
+	width: 100%;
+	height: 100px;
+	resize: none;
+	margin-bottom: 10px;
+	min-width: 20%;
+}
+
+.create-btn {
+	margin-bottom: 20px;
+}
+
+/* ------------------category------------------- */
+.category select {
+	width: 70%;
+	height: 50%;
+	outline: 2px solid var(--text-color);
+	border: none;
+	padding: 0 5px;
+	border-radius: 10px;
+}
+
+.category select:focus {
+	box-shadow: 0 0 0px var(--text-color), 0 0 8px var(--text-color);
+}
+
+select::-webkit-scrollbar {
+	width: 10px;
+	background-color: lightgray;
+}
+
+select::-webkit-scrollbar-thumb {
+	background-color: darkgray;
+	border-radius: 10px;
+}
+
+/* ---------------------------------------- */
+
+
+
+@media only screen and (max-width: 780px) {
+	.CreateProfile--body {
+		padding-top: 25px;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(12,70px) auto auto auto auto auto auto auto;
+		grid-template-areas:
+			"profession"
+			"address"
+			"category"
+			"phone2"
+			"email"
+			"birthday"
+			"linkedin"
+			"github"
+			"instagram"
+			"fecebook"
+			"twitter"
+			"other"
+			"bio"
+			"Create-education"
+			"experience"
+			"skills"
+			"create-languages"
+			"save--image"
+			"save--gallery";
+	}
+
+	.CreateProfile .input input,
+	.CreateProfile select {
+		width: 100%;
+	}
+
+	.CreateProfile textarea{
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+	.category select{
+		height: 27px;
+	}
+
+	.CreateProfile--label{
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.CreateProfile--label{
+		font-size: 1.5rem;
+	}
+}

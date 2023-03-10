@@ -1,0 +1,27 @@
+.gallery--section{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.gallery--img{
+	position: relative;
+}
+
+.gallery--img img{
+	max-width: 80px;
+	max-height: 80px;
+	object-fit: cover;
+}
+
+.gallery--btn{
+	position: absolute;
+	top: -5%;
+	right: -10%;
+	cursor: pointer;
+	background-color: red;
+	padding: 0 8px 3px 8px;
+	border-radius: 50%;
+}
+
+
